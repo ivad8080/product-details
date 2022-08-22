@@ -26,7 +26,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid rgba(0,0,0,20%);
+  /* outline: 1px solid rgba(0,0,0,20%); */
 }
 
 ul, li {
@@ -52,7 +52,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
   height: 12.5vh;
   position: absolute;
@@ -111,12 +111,13 @@ header > nav > ul > li {
 }
 
 header > input {
-  width: 25%;
+  width: 20%;
   padding: 1rem;
-  padding-left: 3rem;
+  padding-left: 3.5rem;
   font-size: 1.4rem;
   color: var(--thirdy-color);
-  background: url(./assets/search-icon.svg) no-repeat 1rem center;
+  background: url(./assets/search-icon.svg) no-repeat .75rem center;
+  background-size: 3vw 3vh;
   background-color: var(--first-color);
 }
 
@@ -157,7 +158,7 @@ main > section.description > h2 {
 }
 
 main > section.description > h3 {
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
 main > section.description > button {

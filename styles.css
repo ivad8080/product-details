@@ -51,6 +51,12 @@ body {
   color: var(--thirdy-color);
 }
 
+@media (aspect-ration: 2/1) {
+  body {
+    color: yellow;
+  }
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -149,9 +155,15 @@ main > section.description {
   flex-direction: column;
   justify-content: center;
   /* align-items: flex-start; */
-  gap: 2.5rem;
+  gap: 2rem;
   padding: 20% 10% 10%;
   background-color: var(--second-color);
+}
+
+@media (max-height: 780px) and (orientation: landscape) {
+  main > section.description {
+    gap: 0.75rem;
+  }
 }
 
 main > section.description > h2 {
@@ -160,8 +172,20 @@ main > section.description > h2 {
   color: var(--first-color);
 }
 
+@media (max-height: 780px) and (orientation: landscape) {
+  main > section.description > h2 {
+    font-size: 2vw;
+  }
+}
+
 main > section.description > h3 {
   font-size: 2.5vw;
+}
+
+@media (max-height: 780px) and (orientation: landscape) {
+  main > section.description > h3 {
+    font-size: 2rem;
+  }
 }
 
 main > section.description > button {
@@ -171,6 +195,12 @@ main > section.description > button {
   font-weight: 500;
   color: var(--thirdy-color);
   background-color: var(--first-color);
+}
+
+@media (max-height: 780px) and (orientation: landscape) {
+  main > section.description > button {
+    padding: 1.5rem 0;
+  }
 }
 
 main > section.photos {
@@ -186,6 +216,12 @@ main > section.photos {
 main > section.photos > .zoom {
   width: 60%;
   margin: 0 20%;
+}
+
+@media (max-height: 780px) and (orientation: landscape) {
+  main > section.photos > .zoom {
+    width: 40%;
+  }
 }
 
 main > section.photos > .zoom > img {

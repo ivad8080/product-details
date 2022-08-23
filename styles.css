@@ -26,7 +26,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid rgba(0,0,0,20%);
+  /* outline: 1px solid rgba(0,0,0,20%); */
 }
 
 ul, li {
@@ -218,6 +218,10 @@ footer > ul {
   flex: 1;
 }
 
+footer > ul > li {
+  font-size: 1.1rem;
+}
+
 footer > button {
   display: flex;
   align-items: center;
@@ -229,4 +233,9 @@ footer > button {
   font-weight: 500;
   color: var(--thirdy-color);
   background-color: var(--first-color);
+}
+
+footer > button > img {
+  width: 1vw;
+  height: 1vw;
 }

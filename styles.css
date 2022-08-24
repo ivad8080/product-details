@@ -78,10 +78,25 @@ header {
   z-index: 2;
 }
 
+@media (max-width: 970px) {
+  header {
+    padding: 0 1.5rem;
+  }
+}
+
 main {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 100%;
   height: 82.5vh;
+}
+
+@media (max-width: 970px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 footer {
@@ -96,7 +111,7 @@ header > img {
 
 @media (max-width: 970px) {
   header > img {
-    min-width: 122px;
+    min-width: 100px;
     width: 15%;
   }
 }
@@ -150,24 +165,30 @@ header > input {
   background-color: var(--first-color);
 }
 
+@media (max-width: 970px) {
+  header > input {
+    width: 50%;
+  }
+}
+
 header > input::placeholder {
   color: var(--thirdy-color);
 }
 
 header > button {
-  width: 3vw;
-  height: 3vw;
+  width: 3rem;
+  height: 3rem;
   border: 0;
   padding: 1rem;
   margin-left: 2rem;
   background: transparent url(./assets/bag-icon.svg) no-repeat center;
-  background-size: 2vw;
+  background-size: 2rem;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: 100%;
+@media (max-width: 970px) {
+  header > button {
+    margin-left: 0;
+  }
 }
 
 main > section.description {

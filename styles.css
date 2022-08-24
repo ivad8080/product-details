@@ -26,7 +26,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid rgba(0,0,0,20%); */
+  outline: 1px solid rgba(0,0,0,20%);
 }
 
 ul, li {
@@ -44,6 +44,12 @@ button {
 html {
   font-family: 'Roboto', sans-serif;
   font-size: 1vw;
+}
+
+@media (max-width: 970px) {
+  html {
+    font-size: 100%;
+  }
 }
 
 body {
@@ -86,6 +92,13 @@ footer {
 
 header > img {
   width: 7.5vw;
+}
+
+@media (max-width: 970px) {
+  header > img {
+    min-width: 122px;
+    width: 15%;
+  }
 }
 
 header > nav {

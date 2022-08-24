@@ -26,7 +26,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid rgba(0,0,0,20%); */
+  outline: 1px solid rgba(0,0,0,20%);
 }
 
 ul, li {
@@ -67,6 +67,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
   width: 100%;
@@ -80,7 +81,9 @@ header {
 
 @media (max-width: 970px) {
   header {
-    padding: 0 1.5rem;
+    height: 20vh;
+    padding: 1rem 1.5rem;
+    gap: 0;
   }
 }
 
@@ -124,6 +127,21 @@ header > img {
   }
 }
 
+header > a {
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  background: transparent url(./assets/burger-opened-icon.svg) no-repeat center;
+  background-size: 2rem;
+  order: 2;
+}
+
+@media (min-width: 970px) {
+  header > a {
+    display: none;
+  }
+}
+
 header > nav {
   display: flex;
   flex-direction: row;
@@ -136,23 +154,18 @@ header > nav {
   }
 }
 
-header > nav > button {
-  width: 3rem;
-  background: url(./assets/burger-opened-icon.svg) no-repeat center/auto border-box;
-}
-
-@media (min-width: 768px) {
-  header > nav > button {
-    display: none;
-  }
-}
-
 header > nav > ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   flex: 1;
+}
+
+@media (max-width: 970px) {
+  header > nav > ul {
+    display: none;
+  }
 }
 
 header > nav > ul > li {
@@ -175,7 +188,10 @@ header > input {
 
 @media (max-width: 970px) {
   header > input {
-    width: 50%;
+    width: auto;
+    order: 3;
+    flex: 1 0 100%;
+    background-size: 1.5rem 1.5rem;
   }
 }
 
@@ -217,7 +233,7 @@ main > section.description {
 
 @media (max-width: 970px) {
   main > section.description {
-    padding: 7rem 1.5rem 1.5rem;
+    padding: 10rem 1.5rem 1.5rem;
     gap: 1rem;
   }
 }

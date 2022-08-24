@@ -207,6 +207,13 @@ main > section.description {
   }
 }
 
+@media (max-width: 970px) {
+  main > section.description {
+    padding: 9rem 1.5rem 1.5rem;
+    gap: 1rem;
+  }
+}
+
 main > section.description > h2 {
   font-size: 3rem;
   font-weight: 700;
@@ -214,6 +221,12 @@ main > section.description > h2 {
 }
 
 @media (max-height: 860px) and (orientation: landscape) {
+  main > section.description > h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 970px) {
   main > section.description > h2 {
     font-size: 2rem;
   }
@@ -251,7 +264,14 @@ main > section.photos {
   align-items: center;
   justify-content: center;
   background-color: var(--thirdy-color);
+  padding: 5%;
   z-index: 1;
+}
+
+@media (max-width: 970px) {
+  main > section.photos {
+    padding: 5% 5% 20%;
+  }
 }
 
 main > section.photos > .zoom {

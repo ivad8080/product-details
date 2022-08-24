@@ -1,5 +1,5 @@
 # product-page
-HTML/CSS responsive (small/normal/large screens) page made from zero following a Figma project Redesigned by me as exercise.
+HTML/CSS responsive (small/normal/large/ultrawide screens) page made from zero following a Figma project Redesigned by me as exercise.
 
 # preview
 https://davisas-product-page.vercel.app/
